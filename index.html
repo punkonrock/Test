@@ -123,20 +123,15 @@
 	</div>
 	<p><center>Wellcome To CamaA</center></p>
   <div data-role="content">
-		<fieldset class="ui-grid-a">
-   <div class="ui-block-a " > <button onclick="capturePhoto();" data-role="button"  data-theme="b">Capture Photo</button></div>
-  <div class="ui-block-b"> <button onclick="capturePhotoEdit();"data-role="button"  data-theme="b">Capture Editable Photo</button></div>
-  <br>
+	 <button onclick="capturePhoto();" data-role="button"  data-theme="b">Capture Photo</button>
+   <button onclick="capturePhotoEdit();"data-role="button"  data-theme="b">Capture Editable Photo</button>
+  <fieldset class="ui-grid-a">
+  
   <div class="ui-block-c"> <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);"data-role="button" data-theme="b">From Photo Library</button> </div>
    <div class="ui-block-d"> <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);"data-role="button" data-theme="b" >From Photo Album</button></div>
-    
-	<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-    <img style="display:none;" id="largeImage" src="" />
-  
-	
-  
-  
-	</fieldset>
+    </div>
+	<img style="display:none;width:120px;height:120px;" id="smallImage" src="" />
+    <img style="display:none;width:120px;height:120px;" id="largeImage" src="" />
 	<fieldset class="ui-grid">
 	<a href="index.html" data-role="button" data-icon="star" data-theme="e">Back</a>
 	</fieldset>
