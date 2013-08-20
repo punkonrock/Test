@@ -22,12 +22,14 @@
    
    <title>Capture Photo</title>
 	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
+  <!--  <script type="text/javascript" charset="utf-8">-->
     
-    //////////////////////////////////////////////////////////
+    
 	<link href="bootstrap.css" rel="stylesheet">
 	<script src="bootstrap.js"></script>
-	<style type="text/css">  
+	
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<style type="text/css">  
 html { height: 100% }  
 body {   
     height:100%;  
@@ -42,14 +44,12 @@ body {
 /*  margin-top:100px;*/  
 }  
 </style>  
-<script src="http://code.jquery.com/jquery-latest.js"></script> 
-
 	
 	
 	
 
    
-////////////////////////////////////////////////////
+
 <script type="text/javascript">  
 function captureSuccess(mediaFiles) {
         var i, len;
@@ -198,7 +198,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
             alert('Connection type: ' + states[networkState]);
         }
-/////////////////////////////////////////////////////////////
+
 
 
 
@@ -222,7 +222,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
     </div>
     
     
-    <div data-role="content">
+        <div data-role="content">
 	<center><img style="display:none;width:120px;height:120px;" id="smallImage" src="" /></center>
 	<center><p>New Pic</p></center>
         <center> <img style="display:none;width:120px;height:120px;" id="largeImage" src="" /></center>
@@ -244,9 +244,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 	</div>
 	<div data-role="footer"><h1>Camara Image Video</h1></div>
 
+		<div id="map_canvas"></div>  
 		
-		
-		<script type="text/javascript">  
+<script type="text/javascript">  
  
     var options = { timeout: 300000 };
     var watchID = navigator.geolocation.watchPosition(initialize, onError, options);
@@ -319,6 +319,6 @@ $(function(){
 });  
 </script> 
 
-<div id="map_canvas"></div>  
+
   </body>
 </html>
